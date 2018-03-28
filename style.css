@@ -1,0 +1,44 @@
+body {
+  color: #fff;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.btn.email-button {
+  background: #fff;
+  border: #fff;
+  color: #000;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.brand .ment {
+  color: #9494FF;
+}
+
+body label {
+  font-weight: bold;
+}
+
+.cover {
+  background: url('images/cover.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    background: url('images/cover-mobile.jpg');
+  }
+}
