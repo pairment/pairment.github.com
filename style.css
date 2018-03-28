@@ -21,6 +21,10 @@ header {
   margin: 0;
 }
 
+.btn.email-button:focus {
+  border-color: #666;
+}
+
 .brand .ment {
   color: #9494FF;
 }
@@ -35,6 +39,11 @@ body label {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
