@@ -228,6 +228,9 @@ body p.lead {
   .cover {
     background: url('images/blue-mobile.jpg');
   }
+  .btn.btn-demo {
+    margin-left: 0;
+  }
 }
 
 footer {
