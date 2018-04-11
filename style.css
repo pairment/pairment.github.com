@@ -165,6 +165,14 @@ body label {
   color: #fff;
 }
 
+._pairment-error-popper p {
+  font-size: 1rem;
+}
+._pairment-error-popper h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .btn.btn-log-in {
   border-radius: 0;
   background: #fff;
