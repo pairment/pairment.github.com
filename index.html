@@ -1,191 +1,144 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pairment</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Nunito:900" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div class="cover d-flex p-3 mx-auto flex-column">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="brand">pair<span class="ment">ment</span></h1>
-          </div>
-          <div class="col text-right">
-            <a href="https://app.pairment.com/" class="btn btn-lg btn-log-in">Log in</a>
-            <a href="https://app.pairment.com/register" class="btn btn-lg btn-signup">Sign up</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="brand-lead">
-              Let's build a web that works for everyone.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <a href="/demo" class="btn btn-demo">
-              See it in action
-            </a>
-          </div>
-        </div>
+---
+title: Pairment
+---
+<div class="cover d-flex p-3 mx-auto flex-column">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="brand">pair<span class="ment">ment</span></h1>
       </div>
+      <div class="col text-right">
+        <a href="https://app.pairment.com/" class="btn btn-lg btn-log-in">Log in</a>
+        <a href="https://app.pairment.com/register" class="btn btn-lg btn-signup">Sign up</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="brand-lead">
+          Let's build a web that works for everyone.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <a href="/demo" class="btn btn-demo">
+          See it in action
+        </a>
+      </div>
+    </div>
+  </div>
 
-    </div>
-    <div class="info info-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Catch accesibility issues before they become a problem</h2>
-            <p class="lead">
-              Give your authors the tools to see and fix accessibility errors as they write.
-            </p>
-            <p>
-              Customize feedback so users can fix issues with your site's editor.
-            </p>
+</div>
+<div class="info info-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Catch accesibility issues before they become a problem</h2>
+        <p class="lead">
+          Give your authors the tools to see and fix accessibility errors as they write.
+        </p>
+        <p>
+          Customize feedback so users can fix issues with your site's editor.
+        </p>
+      </div>
+      <div class="col-md-6 sample-container">
+        <div class="sample-image sample-image-wrapper">
+          <div class="sample-image-indicator">
+            <img src="images/icon.svg" alt="Accessibility error"/>
           </div>
-          <div class="col-md-6 sample-container">
-            <div class="sample-image sample-image-wrapper">
-              <div class="sample-image-indicator">
-                <img src="images/icon.svg" alt="Accessibility error"/>
-              </div>
-              <img src="images/chicken.jpg" alt="A chicken"/>
-            </div>
-            <div class="sample-alert">
-              <div class="arrow"></div>
-              <h4>This image is missing a description</h4>
-              <p>Let's fix it by clicking the <strong>Add description</strong> button</p>
-            </div>
-          </div>
+          <img src="images/chicken.jpg" alt="A chicken"/>
+        </div>
+        <div class="sample-alert">
+          <div class="arrow"></div>
+          <h4>This image is missing a description</h4>
+          <p>Let's fix it by clicking the <strong>Add description</strong> button</p>
         </div>
       </div>
     </div>
-    <div class="info info-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Give feedback in the right places</h2>
-            <p class="lead">
-              Only check the areas of a page that a user has control over.
-            </p>
-            <p>
-              Unlike scanners and browser extentions that check a whole page, pairment lets you define which areas to scan.
-            </p>
+  </div>
+</div>
+<div class="info info-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Give feedback in the right places</h2>
+        <p class="lead">
+          Only check the areas of a page that a user has control over.
+        </p>
+        <p>
+          Unlike scanners and browser extentions that check a whole page, pairment lets you define which areas to scan.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="section-demo">
+          <div class="row section-demo-header">
+            <div class="col-8">
+              <strong>Selector</strong>
+            </div>
+            <div class="col-4">
+              <strong>Path</strong>
+            </div>
           </div>
-          <div class="col-md-6">
-            <div class="section-demo">
-              <div class="row section-demo-header">
-                <div class="col-8">
-                  <strong>Selector</strong>
-                </div>
-                <div class="col-4">
-                  <strong>Path</strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-8">
-                  <code>.content</code>
-                </div>
-                <div class="col-4">
-                  <code>/page/view</code>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-8">
-                  <code>.news, .events</code>
-                </div>
-                <div class="col-4">
-                  <code>/</code>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-8">
-                  <code>.overview:not(.special)</code>
-                </div>
-                <div class="col-4">
-                  <code>/marketing</code>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-8">
+              <code>.content</code>
+            </div>
+            <div class="col-4">
+              <code>/page/view</code>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <code>.news, .events</code>
+            </div>
+            <div class="col-4">
+              <code>/</code>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <code>.overview:not(.special)</code>
+            </div>
+            <div class="col-4">
+              <code>/marketing</code>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="info info-3">
-      <div class="container">
-            <h2>
-              Data privacy
-            </h2>
-            <p class="lead">
-              Perfect for sensitive or internal services, no information is sent to our servers without notifying you first.
-            </p>
-            <p>
-              <a href="http://help.pairment.com/814-pairment-help/1734-product/4947-information-privacy">
-                Read about our information privacy practices
-              </a>
-            </p>
-          </div>
-
+  </div>
+</div>
+<div class="info info-3">
+  <div class="container">
+        <h2>
+          Data privacy
+        </h2>
+        <p class="lead">
+          Perfect for sensitive or internal services, no information is sent to our servers without notifying you first.
+        </p>
+        <p>
+          <a href="http://help.pairment.com/814-pairment-help/1734-product/4947-information-privacy">
+            Read about our information privacy practices
+          </a>
+        </p>
       </div>
-    <div class="info info-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>
-              Clear pricing
-            </h2>
-            <p class="lead">
-              Improve the experience of your site for one easy price.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <div class="pricing">
-              <span class="dollar">$5</span>
-              a month
-            </div>
-          </div>
+
+  </div>
+<div class="info info-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>
+          Clear pricing
+        </h2>
+        <p class="lead">
+          Improve the experience of your site for one easy price.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="pricing">
+          <span class="dollar">$5</span>
+          a month
         </div>
       </div>
     </div>
-
-    <footer class="mt-auto">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Product</h3>
-            <ul aria-label="Resources" class="list-unstyled">
-              <li><a href="/checks">Everything we test</a></li>
-              <li><a href="http://help.pairment.com/">Help</a></li>
-              <li><a href="https://status.pairment.com">Uptime</a></li>
-              <li><a href="https://trello.com/b/QynZ1kpM/pairment-public-idea-board">Ideas &amp; Feature requests</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Company</h3>
-            <ul aria-label="Company" class="list-unstyled">
-              <li><a href="/policy">Terms of service</a></li>
-              <li><a href="/policy#privacy">Privacy policy</a></li>
-              <li><a href="/policy#open-source">Open source</a></li>
-            </ul>
-
-          </div>
-        </div>
-        pairment is &copy; <a href="mailto:kevin@pairment.com"/>Kevin Miller</a>
-
-      </div>
-    </footer>
-    <script src="scripts/jquery.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119438941-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-119438941-1');
-    </script>
-
-  </body>
-</html>
+  </div>
+</div>
