@@ -1,0 +1,28 @@
+---
+layout: docs
+title: Don't repeat link text in an alternative text
+---
+
+<div>
+<div>When including an image within a link, the alternative text is read within the link. This can cause a link to be read twice. For example:
+&#xA0;
+<pre><code class="language-html">&lt;a href=&quot;/contact&quot;&gt;Contact us &lt;img src=&quot;mailbox.png&quot; alt=&quot;Contact us&quot;/&gt;&lt;/a&gt;</code></pre>
+Would read as &quot;Contact us Contact us.&quot;&#xA0;
+
+If an image is repetitive or decorative, set the alternative text to an empty value.
+<h2>Guideline information:</h2>
+This check applies to WCAG 2.0 Sections:
+
+<ul>
+	<li>1.1.1</li>
+	<li>2.4.4</li>
+	<li>2.4.9</li>
+</ul>
+and WCAG techniques:
+
+<ul>
+	<li>H30&#xA0;</li>
+</ul>
+</div>
+</div>
+

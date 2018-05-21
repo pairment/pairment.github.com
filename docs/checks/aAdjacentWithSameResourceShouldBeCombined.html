@@ -1,0 +1,33 @@
+---
+layout: docs
+title: Links to the same place should be combined
+---
+
+Because screen reader users often navigate web pages by jumping between links, it can be confusing if two links right next to each other, with different language, go to the same place. This kind of error can oftentimes be made when using WYSIWYG editors. For example:
+&#xA0;
+<blockquote>
+<p>Please <a href="http://example.com/help">let us know</a> <a href="http://example.com/help">if you need help</a>!</p>
+</blockquote>
+
+<pre><code class="language-html">&lt;p&gt;
+  Please
+  &lt;a href=&quot;http://example.com/help&quot;&gt;let us know&lt;/a&gt;
+  &lt;a href=&quot;http://example.com/help&quot;&gt;if you need help&lt;/a&gt;!
+&lt;/p&gt;</code></pre>
+
+<p>Would read &quot;let us know&quot; and &quot;if you need help&quot; as two separate links, inferring different destinations, when they both go to the same place.</p>
+
+<h2>Guideline information:</h2>
+This check applies to WCAG 2.0 Sections:
+
+<ul>
+	<li>2.4.4</li>
+	<li>2.4.9</li>
+	<li>4.1.2</li>
+</ul>
+and WCAG techniques:
+
+<ul>
+	<li>H2</li>
+	<li>F89&#xA0;</li>
+</ul>

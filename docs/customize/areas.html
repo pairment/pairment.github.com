@@ -1,0 +1,21 @@
+---
+layout: docs
+title: Defining areas of a page to check
+---
+<p>Developers spend a lot of time developing themes or templates for their site, and it doesn't make sense to give accessibility feedback on&nbsp;things like navigation, headers, or footers to content authors.</p>
+<p>Pairment lets you control which areas of a page to check using either custom classes, or the <strong>Content Areas</strong>&nbsp;section of your site's settings.</p>
+
+<h2>Site settings</h2>
+
+<p>Under the&nbsp;<strong>Content Areas</strong>&nbsp;of your site's settings, you can create rules for what pages and sections to check. You can add any valid CSS selector to define the area. For example, if your website wraps user content in:</p>
+
+<pre><code class="language-html">&lt;div class="content"&gt;
+My Content!
+&lt;/div&gt;</code></pre>
+
+<p>Then create a content area with "<code>.content</code>" as the selector, and "<code>/</code>" as the path.<br>
+&nbsp;</p>
+
+<h2>Custom classes</h2>
+
+<p>Pairment will automatically check any element with a class of "<code>_pairment-content</code>".</p>
