@@ -1,0 +1,47 @@
+---
+layout: docs
+title: Accessibility checks
+extra: '<script src="/scripts/checks.js"></script>'
+---
+<h2>What we test</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>WCAG Success Criterion</th>
+      <th>Level</th>
+      <th>Checks</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+{% raw %}
+<script id="checks-template" type="text/x-handlebars-template">
+  {{#each wcag}}
+    <tr>
+      <td>
+        <a href="{{url}}" target="_blank">{{ref_id}}</a>
+        <span class="wcag-label">
+          {{title}}
+        </span>
+      </td>
+      <td>{{level}}</td>
+      <td>
+        <ul>
+          {{#each checks}}
+            <li>
+              <a href="{{name}}">
+                {{title}}
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </td>
+    </tr>
+  {{/each}}
+</script>
+{% endraw %}
