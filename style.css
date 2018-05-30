@@ -279,11 +279,11 @@ footer a, footer a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 70px;
+  min-height: 90px;
 }
 
 .docs .docs-sidebar-body {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .docs .docs-sidebar ul {
