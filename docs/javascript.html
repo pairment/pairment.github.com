@@ -1,0 +1,45 @@
+---
+layout: docs
+title: Javascript
+---
+
+Pairment works by adding Javascript to your page. If you aren't using our Wordpress or Drupal plugins, then you will have to do a little coding to control when and for whom Pairment's accessibility feedback is displayed.
+
+<h2>Settings</h2>
+
+<p>You can change the default behavior of pairment by using the <code>pairment</code> function, which accepts a single <code>settings</code> object.</p> These settings will override any settings made in your Pairment site:</p>
+
+<pre><code class="language-javascript">pairment({
+  tab: true,
+  tabLanguage: {
+    show : "Show feedback",
+    hide : "Hide feedback"
+  }
+});
+</code></pre>
+
+<h3>Available settings</h3>
+
+<ul>
+  <li><code>tab</code> - Set to <code>true</code> to show the accessibility feedback tab, <code>false</code> to hide it.</li>
+  <li><code>autoRun</code> - Set to <code>true</code> to run accessibility checks immediately.</li>
+  <li><code>selector</code> - A CSS selector of the content area to check.</li>
+  <li>
+    <code>tabLanguage</code> - Change the language of the accessibility tab. This should be an object with two properties:
+    <ul>
+      <li><code>show</code> - A string used to show accessibility feedback</li>
+      <li><code>hide</code> - A string used to hide accessibility feedback</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Events</h2>
+
+<p>If you want to customize when a user sees accessibility feedback, you can disable the accessibility tab and trigger Pairment to run using events <code>pairment.run</code> and <code>pairment.hide</code>. These events are bound to the <code>window</code> object, and can be triggered like this:</p>
+
+<pre><code class="language-javascript">window.dispatchEvent(new Event('pairment.show'));
+</code></pre>
+
+<p>Or in jQuery:</p>
+<pre><code class="language-javascript">$(window).trigger('pairment.show');
+</code></pre>
