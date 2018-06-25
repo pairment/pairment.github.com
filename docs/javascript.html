@@ -7,20 +7,21 @@ Pairment works by adding Javascript to your page. If you aren't using our Wordpr
 
 <h2>Settings</h2>
 
-<p>You can change the default behavior of pairment by using the <code>pairment</code> function, which accepts a single <code>settings</code> object.</p> These settings will override any settings made in your Pairment site:</p>
+<p>You can change the default behavior of pairment by setting a <code>pairmentOptions</code> object.</p> These settings will override any settings made in your Pairment site:</p>
 
-<pre><code class="language-javascript">pairment({
+<pre><code class="language-javascript">var pairmentOptions = {
   tab: true,
   tabLanguage: {
     show : "Show feedback",
     hide : "Hide feedback"
   }
-});
+};
 </code></pre>
 
 <h3>Available settings</h3>
 
 <ul>
+  <li><code>disable</code> - Set to <code>true</code> to completely disable Pairment.</li>
   <li><code>tab</code> - Set to <code>true</code> to show the accessibility feedback tab, <code>false</code> to hide it.</li>
   <li><code>autoRun</code> - Set to <code>true</code> to run accessibility checks immediately.</li>
   <li><code>selector</code> - A CSS selector of the content area to check.</li>

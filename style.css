@@ -221,6 +221,11 @@ body p.lead {
   font-size: 1.4rem;
 }
 
+.btn.btn-pairment-blog {
+  border-color: #fff;
+  color: #fff;
+}
+
 .cover {
   background: url('images/blue.jpg');
   background-position: center center;
@@ -229,6 +234,9 @@ body p.lead {
   min-height: 400px;
 }
 
+.cover.blog-cover {
+  min-height: 300px;
+}
 
 @media (max-width: 768px) {
   .cover {
